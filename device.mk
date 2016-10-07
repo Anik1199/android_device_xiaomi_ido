@@ -278,6 +278,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Seccomp
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
+    $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
+
 # Thermal Configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
