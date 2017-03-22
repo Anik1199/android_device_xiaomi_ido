@@ -318,7 +318,6 @@ on property:sys.boot_completed=1
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 on property:vold.decrypt=trigger_restart_framework
-    start config_bt_addr
     start wcnss-service
 
 service irsc_util /system/vendor/bin/irsc_util "/vendor/etc/sec_config"
@@ -342,12 +341,6 @@ service dpmd /system/bin/dpmd
     socket dpmd stream 660 root system
     group system readproc
     disabled
-
-service config_bt_addr /system/vendor/bin/btnvtool -O
-    class core
-    user bluetooth
-    group bluetooth radio
-    oneshot
 
 service hciattach /vendor/bin/hci_qcomm_init -e
     class late_start
