@@ -120,3 +120,13 @@ persist.timed.enable=true
 
 # WIFI
 wifi.interface=wlan0
+
+# Make this device to pass the SafetyNet Check
+# Make Play Store to regard this device as ceritified.
+ro.build.fingerprint=Xiaomi/ido/ido:5.1.1/LMY47V/V8.1.1.0.LAICNDI:user/release-keys
+ro.build.description=ido-user 5.1.1 LMY47V V8.1.1.0.LAICNDI release-keys
+ro.opa.eligible_device=true
+keyguard.no_require_sim=true
+ro.com.google.clientidbase=android-xiaomi
+ro.bootimage.build.fingerprint=Xiaomi/lineage_ido/ido:7.1.2/N2G47E/b499157bec:userdebug/release-keys
+# **Maybe you need to modify the buildinfo.sh**
