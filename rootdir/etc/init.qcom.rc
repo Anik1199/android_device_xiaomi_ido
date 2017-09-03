@@ -36,14 +36,14 @@ on early-init
     mkdir /system 0777 root root
     symlink /data/tombstones /tombstones
     mkdir /dsp 0771 media media
-    
+
 on init
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
 
     # Set permissions for persist partition
     mkdir /persist 0771 system system
 
-    export LD_SHIM_LIBS "/system/bin/mm-qcamera-daemon|libshim_camera.so:/system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so"
+    export LD_SHIM_LIBS "/system/bin/mm-qcamera-daemon|libshim_camera.so:/system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:/system/vendor/lib64/libizat_core.so|libshims_get_process_name.so"
 
     # Enable power-on alarm
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
