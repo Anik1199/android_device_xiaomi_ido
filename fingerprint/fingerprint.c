@@ -455,7 +455,7 @@ static int fingerprint_open(const hw_module_t* module, const char __unused *id,
     fingerprint_device_t *dev = malloc(sizeof(fingerprint_device_t));
     memset(dev, 0, sizeof(fingerprint_device_t));
     dev->common.tag = HARDWARE_DEVICE_TAG;
-    dev->common.version = FINGERPRINT_MODULE_API_VERSION_2_0;
+    dev->common.version = FINGERPRINT_MODULE_API_VERSION_2_1;
     dev->common.module = (struct hw_module_t*) module;
     dev->common.close = fingerprint_close;
 
@@ -485,7 +485,7 @@ static struct hw_module_methods_t fingerprint_module_methods = {
 fingerprint_module_t HAL_MODULE_INFO_SYM = {
     .common = {
         .tag                = HARDWARE_MODULE_TAG,
-        .module_api_version = FINGERPRINT_MODULE_API_VERSION_2_0,
+        .module_api_version = FINGERPRINT_MODULE_API_VERSION_2_1,
         .hal_api_version    = HARDWARE_HAL_API_VERSION,
         .id                 = FINGERPRINT_HARDWARE_MODULE_ID,
         .name               = "HM3 Fingerprint HAL",
