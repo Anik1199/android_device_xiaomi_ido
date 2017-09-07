@@ -445,9 +445,6 @@ vendor/lib64/libcalmodule_gyroscope.so
 vendor/lib64/libcalmodule_yamaha.so
 vendor/lib64/libcalmodule_senodia.so
 
-# Sound Trigger
-vendor/lib/hw/sound_trigger.primary.msm8916.so
-
 # Signed Venus (media) firmware
 etc/firmware/venus.b00
 etc/firmware/venus.b01
