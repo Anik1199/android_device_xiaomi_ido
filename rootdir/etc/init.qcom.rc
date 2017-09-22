@@ -508,8 +508,3 @@ on property:init.svc.surfaceflinger=stopped
 
 on property:init.svc.surfaceflinger=running
     start ppd
-
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    socket fpce stream 0666 system system
-    user system
