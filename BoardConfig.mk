@@ -42,6 +42,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x02000000
@@ -167,7 +168,7 @@ TARGET_RIL_VARIANT := caf
 include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Shim
 TARGET_LD_SHIM_LIBS := system/vendor/bin/mm-qcamera-daemon|libshim_camera.so:system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so:system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
