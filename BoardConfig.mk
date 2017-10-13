@@ -78,11 +78,9 @@ BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# LineageHW
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    device/xiaomi/ido/cmhw
+    device/xiaomi/ido/lineagehw
 
 # CNE
 BOARD_USES_QCNE := true
