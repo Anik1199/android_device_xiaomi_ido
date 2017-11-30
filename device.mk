@@ -210,6 +210,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     keystore.msm8916
 
+# Libshim
+PRODUCT_PACKAGES += \
+    libshim_atomic
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
