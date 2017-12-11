@@ -278,6 +278,14 @@ vendor/lib64/libQSEEComAPI.so|b6c177649f7365376969d7aa9426fa97de5d7cfe
 vendor/lib64/librpmb.so|8d369f102b1dfed2f7794fdac4d51c54a6a7c99d
 vendor/lib64/libssd.so|1ef8d23376be307205e9d43c4e07f3c752abad63
 
+# FM Radio (From OP3)
+-lib/vendor.qti.hardware.fm@1.0.so
+-lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
+
 # GPS (From crackling)
 -lib64/libloc_api_v02.so|ca97a81ea91ca5c7d8dd8c9a9054121ce1446b8a
 -lib64/libloc_ds_api.so|c2ed259789fe01aeced4e06ad1693036852daf7c
