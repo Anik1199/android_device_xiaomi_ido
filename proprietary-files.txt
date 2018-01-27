@@ -440,7 +440,7 @@ vendor/lib64/libril-qc-ltedirectdisc.so|0f737f5ddc0eeb810e8d6f074907574765227665
 vendor/lib64/libril-qc-qmi-1.so|acc322a2736b4797ff52ec563c375eea4fd2ce22
 vendor/lib64/libril-qc-radioconfig.so|33e543ea9602680bbf7f1e3be7c66cd0669d593a
 vendor/lib64/libril-qcril-hook-oem.so|290cc05093ff7f2f378eddcfeff7bee6a7935ec7
-vendor/lib64/libsettings.so|dfbf9b0cca65134dc79b1151bbbda85c79fe5c71
+vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so|587aac68db68635d5daa9f02c651bae6a55102db
 vendor/lib64/libxml.so|ca5f99d9fd4e44dd5bc357d0b84272bb365cd629
 vendor/lib/libmdmdetect.so|259b9a5ddbc56e42273879b36f8ec9892f2e3c08
