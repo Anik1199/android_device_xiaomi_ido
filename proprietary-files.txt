@@ -420,6 +420,7 @@ vendor/lib/libqmi.so|b88e70492f9a8e7882650afb0dc10621b8de0b3d
 vendor/lib/libsmemlog.so|c632a70764ee1d6416ce1758f4d10cd6983d204d
 
 # Radio (From crackling)
+# libsettings.so (From OP3)
 -app/shutdownlistener/shutdownlistener.apk|ae5141ba7ac7f9003ae71284da9bdd389542c6ad
 bin/netmgrd|e7206cb250f354e51920750b501dc48b106f1f20
 bin/qmuxd|c8e8ca85084e90cf41a609f9f0a6f3ad5896c186
