@@ -172,6 +172,9 @@ include device/qcom/sepolicy/legacy-sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
+# Shim
+TARGET_LD_SHIM_LIBS := system/bin/mm-qcamera-daemon|libshim_camera.so:system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so:system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
