@@ -170,7 +170,7 @@ include device/qcom/sepolicy/legacy-sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Shim
-TARGET_LD_SHIM_LIBS := system/bin/mm-qcamera-daemon|libshim_camera.so:system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so:system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
+TARGET_LD_SHIM_LIBS := system/vendor/bin/mm-qcamera-daemon|libshim_camera.so:system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so:system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -179,6 +179,7 @@ BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+PRODUCT_VENDOR_MOVE_ENABLED      := true
 TARGET_USES_QCOM_WCNSS_QMI       := true
 TARGET_PROVIDES_WCNSS_QMI        := true
 WIFI_DRIVER_FW_PATH_AP           := "ap"

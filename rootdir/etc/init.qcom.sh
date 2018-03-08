@@ -55,7 +55,7 @@ start_sensors()
 
 start_msm_irqbalance_8939()
 {
-	if [ -f /system/bin/msm_irqbalance ]; then
+	if [ -f /system/vendor/bin/msm_irqbalance ]; then
 		case "$platformid" in
 		    "239" | "241" | "263" | "264" | "268" | "269" | "270" | "271")
 			start msm_irqbalance;;

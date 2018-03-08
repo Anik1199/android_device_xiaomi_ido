@@ -8,7 +8,7 @@ etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
@@ -31,15 +31,15 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
+bin/btnvtool:vendor/bin/btnvtool
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib64/libbtnv.so
 
 # BMS
-bin/vm_bms
+bin/vm_bms:vendor/bin/vm_bms
 
 # Camera
-bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 vendor/lib/libFaceProc.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libimscamera_jni.so
@@ -271,7 +271,7 @@ lib/hw/consumerir.msm8916.so
 lib64/hw/consumerir.msm8916.so
 
 # DRM (From kipper)
-bin/qseecomd|74e6868aaf9c7bae0669eaf92ecbcb525aecb935
+bin/qseecomd:vendor/bin/qseecomd|74e6868aaf9c7bae0669eaf92ecbcb525aecb935
 vendor/lib64/libdrmfs.so|327ed1df2de3becb6518da16c8765c955c1a33bc
 vendor/lib64/libdrmtime.so|c022bb97f0f74cc98bd2fc26dc9b804e3e48e3ea
 vendor/lib64/libQSEEComAPI.so|b6c177649f7365376969d7aa9426fa97de5d7cfe
@@ -372,7 +372,7 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
-bin/mm-pp-daemon
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libmm-abl.so
 vendor/lib64/libmm-abl-oem.so
@@ -385,7 +385,7 @@ vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-qdcm.so
 
 # Qualcomm framework (from crackling)
-bin/irsc_util|9f92211cb3f8f76195aec1081f8a58aa8d456b07
+bin/irsc_util:vendor/bin/irsc_util|9f92211cb3f8f76195aec1081f8a58aa8d456b07
 vendor/lib64/libdiag.so|0dfd85d01bd529f97b03876d90447773dad2704e
 vendor/lib64/libdsi_netctrl.so|bfbfcb7e90c99466fa76d96881fc8f62baa0a7e2
 vendor/lib64/libdsutils.so|0bea6dcf5a98c12cf673ad8107c7eef25591832f
@@ -422,10 +422,10 @@ vendor/lib/libsmemlog.so|c632a70764ee1d6416ce1758f4d10cd6983d204d
 # Radio (From crackling)
 # libsettings.so (From OP3)
 -app/shutdownlistener/shutdownlistener.apk|ae5141ba7ac7f9003ae71284da9bdd389542c6ad
-bin/netmgrd|e7206cb250f354e51920750b501dc48b106f1f20
-bin/qmuxd|c8e8ca85084e90cf41a609f9f0a6f3ad5896c186
-bin/radish|100a2d58d0f9b87a9d3698e7b5b00d264aa8b852
-bin/rmt_storage|7eb5b81e499e456e5723c0f5fcc1e6ae0b1af73e
+bin/netmgrd:vendor/bin/netmgrd|e7206cb250f354e51920750b501dc48b106f1f20
+bin/qmuxd:vendor/bin/qmuxd|c8e8ca85084e90cf41a609f9f0a6f3ad5896c186
+bin/radish:vendor/bin/radish|100a2d58d0f9b87a9d3698e7b5b00d264aa8b852
+bin/rmt_storage:vendor/bin/rmt_storage|7eb5b81e499e456e5723c0f5fcc1e6ae0b1af73e
 etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 -framework/qcnvitems.jar|b50c25a4760313acd6ad770bf1ee207b5376b53e
@@ -474,7 +474,7 @@ vendor/lib/libthermalclient.so
 
 # Time services
 -app/TimeService/TimeService.apk
-bin/time_daemon
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 vendor/lib64/libTimeService.so
